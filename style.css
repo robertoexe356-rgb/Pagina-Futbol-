@@ -1,45 +1,59 @@
 body{
     font-family: Arial, sans-serif;
+    margin: 0;
     text-align: center;
-    margin: 20px;
     background-color: #e8f5e9;
 }
 
-h1{
-    color: green;
+header{
+    background-color: green;
+    color: white;
+    padding: 20px;
 }
 
 nav{
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 20px;
+    background-color: #1b5e20;
+    padding: 10px;
 }
 
 nav a{
+    color: white;
     text-decoration: none;
-    color: blue;
     font-weight: bold;
 }
 
+nav a:hover{
+    color: yellow;
+}
+
 img{
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+    margin-top: 20px;
     border-radius: 15px;
+}
+
+section{
+    padding: 20px;
 }
 
 ul{
     list-style-position: inside;
 }
 
-@media(max-width:768px){
+footer{
+    background-color: #1b5e20;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
 
+/* RESPONSIVE PARA CELULAR */
+@media(max-width:768px){
     nav{
         flex-direction: column;
     }
-
-    body{
-        padding: 10px;
-    }
-
 }
